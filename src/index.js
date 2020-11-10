@@ -7,12 +7,14 @@ import {overmind} from './Others/OvermindHelper'
 import CounterDemo from "./Components/CounterDemo";
 import {ThemeProvider} from '@material-ui/core/styles';
 import {theme} from './Others/Theme'
+import App from "./Components/App";
+import TodoApp from "./Components/TodoApp";
 
 ReactDOM.render(
     <React.StrictMode>
         <Provider value={overmind}>
             <ThemeProvider theme={theme}>
-                <CounterDemo/>
+                <TodoApp />
             </ThemeProvider>
         </Provider>
     </React.StrictMode>,

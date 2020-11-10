@@ -72,7 +72,7 @@ export class NodeFetchHelper {
             });
     }
 
-    static deletee = (url, params, headers, callback) => {
+    static delete = (url, params, headers, callback) => {
         if (params) {
             params = new URLSearchParams(params);
             url = url + "?" + params

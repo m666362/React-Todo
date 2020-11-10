@@ -7,11 +7,17 @@ import {createHook} from "overmind-react";
 export const useOvermind = createHook();
 export const overmind = createOvermind({
     state: {
-        counter: 0
+        todo: [],
+        editCondition: false,
+        editid: "5faaddbfd082f0261c5fa466"
     },
     actions: {
-        increase({state}, number) {
-            state.counter += number
+        setTodo({state}, data){
+            state.todo = data;
+            console.log(state.editid)
         },
+        setEditCondition({state}, bole, id){
+            state.editCondition = bole;
+        }
     }
 });
